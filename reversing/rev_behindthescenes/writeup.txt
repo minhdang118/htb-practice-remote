@@ -1,0 +1,2 @@
+1. Open the executable file with Hex Editor.
+2. Captured the Flag!

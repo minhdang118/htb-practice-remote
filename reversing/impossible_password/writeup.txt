@@ -1,0 +1,11 @@
+1. Execute the binary file and observe that it takes a string and output the input string itself.
+2. Open the binary file with Hex Editor and find string "SuperSeKretKey".
+3. Execute again, this time with input "SuperSeKretKey".
+4. The program switches to a different mode where no input string generates any output.
+5. Run again with ltrace, this time observing that the program compares the input string with a random string.
+6. Disassemble the main function with Radare2, find 2 secret functions fcn.0040078d() and fcn.00400978().
+7. Disassemble fcn.0040078d() and find that it runs the random function multiple times to create the random string.
+8. Closely observe the main disassembly, find the condition at which fcn.00400978() runs.
+9. Change the disassembly code so that fcn.00400978() always runs.
+10. Execute the program again, with the second input being any random string.
+11. Captured the Flag!
